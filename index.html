@@ -61,8 +61,8 @@
     <!-- Main Jquery & Hover Effects. Should load first -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/hover_pack.js"></script>
-
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
     
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -74,6 +74,8 @@
 
   <body style="padding-top:50px;">
 
+    <! ========== ナビバー ==================================================================================================== 
+  =============================================================================================================================>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -82,21 +84,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <strong><a class="navbar-brand" href="#" style="color:#fff;">デモサイト</a></strong>
+          <strong><a class="navbar-brand" href="#" style="color:#fff;">mini4ch</a></strong>
         </div>
 
         <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1"  style="color:#fff;">
           <ul class="nav navbar-nav">
-            <li><a href="#"  style="color:#fff;"><strong>SNSについて</strong></a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="color:#fff;"><strong>会員パターン</strong><b class="caret"></b></a>
-
-              <ul class="dropdown-menu">
-                <li><a href="#">スモール会員</a></li>
-                <li><a href="#">ミディアム会員</a></li>
-                <li><a href="#">ラージ会員</a></li>
-              </ul>
+            <li><a href="#about_sns"  style="color:#fff;"><strong>SNSについて</strong></a></li>
+            <li><a href="#member"  style="color:#fff;"><strong>会員パターン</strong></a></li>
             </li>
+            <li><a href="#can"  style="color:#fff;"><strong>できること</strong></a></li>
           </ul>
 
           <form class="form-inline navbar-right" action="http://sae.xpne.info/member/login/authMode/MailAddress" method="post" style="padding-top:7px;">
@@ -115,10 +111,12 @@
             </div>
             <button type="submit" class="btn btn-primary" type="button">サインイン</button>
           </form>
-      </nav>
+        
+      </div>
+    </nav>
 
 
-  <! ========== HEADERWRAP ==================================================================================================== 
+  <! ========== トップ ==================================================================================================== 
   =============================================================================================================================>
     <div id="headerwrap">
       <div class="container">
@@ -127,14 +125,14 @@
           <h1 class="animation slideDown">デモサイト</h1>
           <h3 style="color:white;">みんなで集まれるSNSのためにあなたの協力が必要です。下のボタンをクリックし、SNSに出資しようという意思を教えてください。</h3>
           <p style="color:white;">グーグルフォームで意思を伝えよう！</p>
-          <a href="https://docs.google.com/forms/d/12JkDUJCPfQNFEMu908U4FmphfQczE8XHmpHTevbXw5E/viewform"><p class="mt"><button type="button" class="btn btn-cta btn-lg">協力する</button></p></a>
+          <a href="https://docs.google.com/forms/d/12JkDUJCPfQNFEMu908U4FmphfQczE8XHmpHTevbXw5E/viewform"><p class="mt"><button type="button" class="btn btn-primary btn-lg">申し込む</button></p></a>
         </div>
         
       </div><!-- /row -->
       </div><!-- /container -->
     </div> <!-- /headerwrap -->
 
-      <! ========== FEATURED ICONS ================================================================================================ 
+      <! ========== SNSについて ================================================================================================ 
   =============================================================================================================================>    
     <div id="white">
       <div class="container">
@@ -170,7 +168,7 @@
       </div><!-- /container -->
     </div><!-- /white -->
 
-  <! ========== BLOG POSTS ==================================================================================================== 
+  <! ========== 会員パターン ==================================================================================================== 
   =============================================================================================================================>    
   <div class="container"> 
 
@@ -221,7 +219,55 @@
     </div><!-- /row -->
   </div><!-- /container -->
 
-  <! ========== TESTIMONIAL CAROUSEL ========================================================================================== 
+  <! ========== できること ================================================================================================ 
+  =============================================================================================================================>    
+  <div id="white">
+    <div class="container" id="can">
+      <div class="row mt">
+        <div class="col-lg-4 col-lg-offset-4 centered">
+          <h3>みんなが集まればできる！</h3>
+          <hr>
+        </div>
+      </div>
+      <div class="row mt">
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-flag"></i>
+          <h4>こんなこと</h4>
+          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-flag"></i>
+          <h4>あんなこと</h4>
+          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-flag"></i>
+          <h4>そんなこと</h4>
+          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
+        </div>
+       </div>
+
+       <div class="row mt">
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-flag"></i>
+          <h4>いろんなこと</h4>
+          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-flag"></i>
+          <h4>すごいこと</h4>
+          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-flag"></i>
+          <h4>たのしいこと</h4>
+          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
+        </div>      
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div>
+
+  <! ========== 新規登録 ========================================================================================== 
   =============================================================================================================================>    
 
   <div id="grey">
@@ -247,7 +293,7 @@
     </div><!-- /container -->
   </div>
   
-  <! ========== FOOTER ======================================================================================================== 
+  <! ========== フッター ======================================================================================================== 
   =============================================================================================================================>    
   
   <div id="f">
@@ -265,31 +311,15 @@
         <div class="col-lg-3">
           <h4>twitter アカウント</h4>
           <div id="showtweets"></div>
-            <script>
-              twitterFetcher.fetch('258157205101088768', 'showtweets', 2, true, false, false, '', false, handleTweets, false);
-              
-              function handleTweets(tweets){
-                  var x = tweets.length;
-                  var n = 0;
-                  var element = document.getElementById('showtweets');
-                  var html = '<ul>';
-                  while(n < x) {
-                    html += '<li>' + tweets[n] + '</li>';
-                    n++;
-                  }
-                  html += '</ul>';
-                  element.innerHTML = html;
-              }         
-            </script>
-          <p>フォロー <b>@hogehoge</b></p>
+          <a href="https://twitter.com/"><p>アカウント名 @hogehoge</p></a>
         </div><!-- /col-lg-3 -->
         
         <!-- LATEST POSTS -->
         <div class="col-lg-3">
           <h4>facebook ページ</h4>
-          <p>
+          <a href="https://www.facebook.com/"><p>
             なんたらプロジェクト<br/>
-          </p>
+          </p></a>
         </div><!-- /col-lg-3 -->
         
         <!-- NEW PROJECT -->
