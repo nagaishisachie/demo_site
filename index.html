@@ -19,7 +19,6 @@
     <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">    
     <link href="assets/css/animations.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
     
     <!-- JavaScripts needed at the beginning
     ================================================== -->
@@ -76,7 +75,7 @@
 
     <! ========== ナビバー ==================================================================================================== 
   =============================================================================================================================>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1 .nav-collapse">
@@ -84,18 +83,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <strong><a class="navbar-brand" href="#" style="color:#fff;">デモサイト</a></strong>
+          <strong><a class="navbar-brand" href="#">デモサイト</a></strong>
         </div>
 
-        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1"  style="color:#fff;">
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" >
           <ul class="nav navbar-nav">
-            <li><a href="#about_sns"  style="color:#fff;"><strong>SNSについて</strong></a></li>
-            <li><a href="#member"  style="color:#fff;"><strong>会員パターン</strong></a></li>
-            </li>
-            <li><a href="#can"  style="color:#fff;"><strong>できること</strong></a></li>
+            <li><a href="#action"><strong>活動について</strong></a></li>
+            <li><a href="#entry"><strong>入部登録</strong></a></li>
           </ul>
 
-          <form class="form-inline navbar-right" action="http://sample.xpne.info/member/login/authMode/MailAddress" method="post" style="padding-top:7px;">
+          <form class="form-inline navbar-right" action="http://sae.xpne.info/member/login/authMode/MailAddress" method="post" style="padding-top:7px;">
             <div class="form-group">
               <label for="authMailAddress_mail_address" class="sr-only">Eメールアドレス</label>
               <input type="email" class="form-control" placeholder="Eメール" id="authMailAddress_mail_address" type="text" name="authMailAddress[mail_address]">
@@ -123,174 +120,217 @@
       <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2 mt">
           <h1 class="animation slideDown">デモサイト</h1>
-          <h3 style="color:white;">みんなで集まれるSNSのためにあなたの協力が必要です。下のボタンをクリックし、SNSに出資しようという意思を教えてください。</h3>
-          <p style="color:white;">グーグルフォームで意思を伝えよう！</p>
+          <h3 style="color:white;">こんなことしようと思ってるからぜひ参加して下さい。こんなことしようと思ってるからぜひ参加して下さい。</h3>
+          <!--
           <a href="https://docs.google.com/forms/d/12JkDUJCPfQNFEMu908U4FmphfQczE8XHmpHTevbXw5E/viewform"><p class="mt"><button type="button" class="btn btn-primary btn-lg">申し込む</button></p></a>
+          -->
         </div>
         
       </div><!-- /row -->
       </div><!-- /container -->
     </div> <!-- /headerwrap -->
 
-      <! ========== SNSについて ================================================================================================ 
+    <! ========== この活動について ================================================================================================= 
   =============================================================================================================================>    
     <div id="white">
-      <div class="container">
+      <div class="container" id="action">
+        <div class="row mt centered">
+          <div class="col-lg-4 col-lg-offset-4">
+            <h3>この活動について</h3>
+            <hr>
+          </div><!-- /col-lg-4 -->
+        </div><!-- /row -->
+        
         <div class="row mt">
+          <div class="col-lg-8 col-lg-offset-2">
+            <p>こんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよ</p>
+          </div><! --/col-lg-8 -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /black -->
+
+    <! ========== スケジュール ================================================================================================ 
+  =============================================================================================================================>
+
+    <div id="white">
+      <div class="container" id="schedule">
+        <div class="row mt">
+
           <div class="col-lg-4 col-lg-offset-4 centered">
-            <h3>こんなSNSにするよ</h3>
+            <h3>スケジュール</h3>
             <hr>
           </div>
         </div>
-        <div class="row mt">
-          <div class="col-lg-3">
-            <p class="capitalize">1</p>
-            <h4>かるい！</h4>
-            <p>サーバーが重くなることもなく、夜でも快適にSNSを楽しんでもらえるよ。もう休日を待たず、仕事が終わってからでもすぐ見れるし書き込める。</p>
-          </div>
-          <div class="col-lg-3">
-            <p class="capitalize">2</p>
-            <h4>かるい！</h4>
-            <p>サーバーが重くなることもなく、夜でも快適にSNSを楽しんでもらえるよ。もう休日を待たず、仕事が終わってからでもすぐ見れるし書き込める。</p>
-          </div>
-          <div class="col-lg-3">
-            <p class="capitalize">3</p>
-            <h4>かるい！</h4>
-            <p>サーバーが重くなることもなく、夜でも快適にSNSを楽しんでもらえるよ。もう休日を待たず、仕事が終わってからでもすぐ見れるし書き込める。</p>
-          </div>      
-  
-          <div class="col-lg-3">
-            <p class="capitalize">4</p>
-            <h4>かるい！</h4>
-            <p>サーバーが重くなることもなく、夜でも快適にSNSを楽しんでもらえるよ。もう休日を待たず、仕事が終わってからでもすぐ見れるし書き込める。</p>
-          </div>
-        </div><!-- /row -->
-      </div><!-- /container -->
-    </div><!-- /white -->
 
-  <! ========== 会員パターン ==================================================================================================== 
-  =============================================================================================================================>    
-  <div class="container"> 
+        <div class="col-md-6">
+          <h4>4月 体験入部ワークショップ</h4>
+          <p>こんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよ</p>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">スケジュール</div>
+            <table class="table">
+            <thead>
+            <tr>
+            <th>開催日</th>
+            <th>時間</th>
+            <th>場所</th>
+            <th>参加費</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>04月00日（土）</td>
+            <td>00:00〜00:00</td>
+            <td>会場名称 <a href="#" target="_blank" class="btn btn-default btn-xs">SITE</a></td>
+            <td>1,000円</td>
+            </tr>
+            <tr>
+            <td>04月00日（土）</td>
+            <td>00:00〜00:00</td>
+            <td>会場名称 <a href="#" target="_blank" class="btn btn-default btn-xs">SITE</a></td>
+            <td>1,000円</td>
+            </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>5月以降 通常活動</h4>
+          <p>こんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよこんなことするよあんなことするよそんなことするよ</p>
+          <div class="panel panel-default">
+            <div class="panel-heading">スケジュール</div>
+            <table class="table">
+            <thead>
+            <tr>
+            <th>開催日</th>
+            <th>時間</th>
+            <th>場所</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>05月00日（土）</td>
+            <td>00:00〜00:00</td>
+            <td>会場名称 <a href="#" target="_blank" class="btn btn-default btn-xs">SITE</a></td>
+            </tr>
+            <tr>
+            <td>05月00日（土）</td>
+            <td>00:00〜00:00</td>
+            <td>会場名称 <a href="#" target="_blank" class="btn btn-default btn-xs">SITE</a></td>
+            </tr>
+            <tr>
+            <td>05月00日（土）</td>
+            <td>00:00〜00:00</td>
+            <td>会場名称 <a href="#" target="_blank" class="btn btn-default btn-xs">SITE</a></td>
+            </tr>
+            <tr>
+            <td>05月00日（土）</td>
+            <td>00:00〜00:00</td>
+            <td>会場名称 <a href="#" target="_blank" class="btn btn-default btn-xs">SITE</a></td>
+            </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <! ========== 部費の使い道 ==================================================================================================== 
+  =============================================================================================================================>  
+  <div id="white">
+  <div class="container" id="course"> 
 
     <div class="row mt centered ">
       <div class="col-lg-4 col-lg-offset-4">
-        <h3>会員パターンは３種類！</h3>
+        <h3>部費の使い道</h3>
         <hr>
       </div>
-    </div><!-- /row -->
+    </div>
 
     <div class="row mt">
-      <div class="col-lg-4 col-md-4 col-xs-12 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/port04.jpg" alt="" />
-          <div class="b-wrapper">
-              <h4 class="b-from-left b-animate b-delay03">スモール会員</h4>
-              <p class="b-from-right b-animate b-delay03">さっそく申し込む</p>
+          <div class="col-lg-8 col-lg-offset-2">
+            <p>部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道部費の使い道</p>
           </div>
-        </a>
-        <p>スモール会員</p>
-        <p class="lead">スモール会員はこんなことができたり、こんなこともできたり、こんなことだってできるよ。</p>
-        <hr-d>
-      </div><!-- col-lg-4 -->
+        </div>
       
-      <div class="col-lg-4 col-md-4 col-xs-12 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/port05.jpg" alt="" />
-          <div class="b-wrapper">
-              <h4 class="b-from-left b-animate b-delay03">ミディアム会員</h4>
-              <p class="b-from-right b-animate b-delay03">さっそく申し込む</p>
-          </div>
-        </a>
-        <p>ミディアム会員</p>
-        <p class="lead">ミディアム会員はこんなことができたり、こんなこともできたり、こんなことだってできるよ。</p>
-        <hr-d>
-      </div><!-- col-lg-4 -->
-      
-      <div class="col-lg-4 col-md-4 col-xs-12 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/port06.jpg" alt="" />
-          <div class="b-wrapper">
-              <h4 class="b-from-left b-animate b-delay03">ラージ会員</h4>
-              <p class="b-from-right b-animate b-delay03">さっそく申し込む</p>
-          </div>
-        </a>
-        <p>ラージ会員</p>
-        <p class="lead">ラージ会員はこんなことができたり、こんなこともできたり、こんなことだってできるよ。</p>
-        <hr-d>
-      </div><!-- col-lg-4 -->
-      
-    </div><!-- /row -->
-  </div><!-- /container -->
-
-  <! ========== できること ================================================================================================ 
-  =============================================================================================================================>    
-  <div id="white">
-    <div class="container" id="can">
-      <div class="row mt">
-        <div class="col-lg-4 col-lg-offset-4 centered">
-          <h3>みんなが集まればできる！</h3>
-          <hr>
-        </div>
-      </div>
-      <div class="row mt">
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-flag"></i>
-          <h4>こんなこと</h4>
-          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
-        </div>
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-flag"></i>
-          <h4>あんなこと</h4>
-          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
-        </div>
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-flag"></i>
-          <h4>そんなこと</h4>
-          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
-        </div>
-       </div>
-
-       <div class="row mt">
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-flag"></i>
-          <h4>いろんなこと</h4>
-          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
-        </div>
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-flag"></i>
-          <h4>すごいこと</h4>
-          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
-        </div>
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-flag"></i>
-          <h4>たのしいこと</h4>
-          <p>こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。こんなことできてこんなこともできるよ。</p>
-        </div>      
-      </div><!-- /row -->
-    </div><!-- /container -->
+    </div>
+  </div>
   </div>
 
   <! ========== 新規登録 ========================================================================================== 
   =============================================================================================================================>    
 
-  <div id="grey">
-    <div class="container">
-      <div class="row mt">
-        <div class="col-lg-4 col-lg-offset-4 centered">
-          <h3>新規登録はこちら！</h3>
-          <hr>
+  <div id="white">
+      <div class="container" id="entry">
+        <div class="row mt">
+          <div class="col-lg-4 col-lg-offset-4 centered">
+            <h3>入部申し込み</h3>
+            <hr>
+          </div>
         </div>
-        <div class="col-lg-8 col-lg-offset-2 centered">
-          <p>SNSからメールがくるよ。メールに初期パスワードが書いてあるからSNSにアクセスしてみてね。</p>
-        </div><! --/col-lg-8 -->
- 
-          <form class="col-lg-12"  role="form" action="http://sample.xpne.info/opAuthMailAddress/requestRegisterURL" method="POST">
-            <input type="hidden" name="request_register_url[course_id]" value="3">
+
+        <div class="row mt">
+          <div class="col-lg-8 col-lg-offset-2 centered">
+          <p>体験ワークショップなどに参加して入部を決められた方は、このフォームから入部登録を行ってください。</p>
+          <p>活動名：デモサイト<br>部費：1,000円／月（カード決済）</p>
+          </div>
+          <form class="col-lg-12"  role="form" action="http://sae.xpne.info/opAuthMailAddress/requestRegisterURL" method="POST">
+            <input type="hidden" name="request_register_url[course_id]" value="1">
             <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
-              <input type="text" name="request_register_url[mail_address]"  class="center-block form-control input-lg" title="Enter you email." placeholder="メールアドレスを入力してね">
+              <input type="text" name="request_register_url[mail_address]"  class="center-block form-control input-lg" title="Enter you email." placeholder="メールアドレスを入力して下さい">
               <span class="input-group-btn"><button type="submit" class="btn btn-lg btn-primary" type="button">送信</button></span>
             </div>
           </form>
-        
-      </div><!-- /row -->
-    </div><!-- /container -->
+        </div>
+
+        <div class="row mt">
+          <div class="col-lg-4">
+            <p class="capitalize">1</p>
+            <h4>新規登録フォーム</h4>
+            <p>新規登録フォームにメールアドレスを入力送信。</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="capitalize">2</p>
+            <h4>招待メール</h4>
+            <p>届いた招待メールのリンクに飛んでください。</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="capitalize">3</p>
+            <h4>データ入力</h4>
+            <p>プロフィール項目・カード情報を入力送信で完了です。</p>
+          </div>
+          </div>
+
+      </div><!-- /container -->
+    </div><!-- /white -->
+
+  <! ========== 運営メンバー ==================================================================================================== 
+  =============================================================================================================================> 
+  <div id="white">
+  <div class="container" id="direction"> 
+
+    <div class="row mt centered ">
+      <div class="col-lg-4 col-lg-offset-4">
+        <h3>運営メンバー</h3>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row mt">
+      <div class="col-lg-4 col-md-4 col-xs-12 desc">
+        <p>部長：ヤマダ  <a class="b-link-fade b-animate-go" href="https://twitter.com/">@hogehoge</a></p>
+      </div>
+      
+      <div class="col-lg-4 col-md-4 col-xs-12 desc">
+        <p>副部長：タロウ <a class="b-link-fade b-animate-go" href="https://twitter.com/">@hogehoge</a></p>
+      </div>
+      
+      <div class="col-lg-4 col-md-4 col-xs-12 desc">
+        <p>マネージャー：ハナコ <a class="b-link-fade b-animate-go" href="https://twitter.com/">@hogehoge</a></p>
+      </div>
+      
+    </div>
+  </div>
   </div>
   
   <! ========== フッター ======================================================================================================== 
@@ -299,34 +339,14 @@
   <div id="f">
     <div class="container">
       <div class="row">
-        <!-- ADDRESS -->
+        
+                <!-- ADDRESS -->
         <div class="col-lg-3">
           <h4>コンタクト</h4>
           <p>
-            <i class="fa fa-envelope-o"></i> mail@yourdomain.com
+            <i class="fa fa-envelope-o"></i> support@pne.jp
           </p>
-        </div><! --/col-lg-3 -->
-        
-        <!-- TWEETS -->
-        <div class="col-lg-3">
-          <h4>twitter アカウント</h4>
-          <div id="showtweets"></div>
-          <a href="https://twitter.com/"><p>アカウント名 @hogehoge</p></a>
-        </div><!-- /col-lg-3 -->
-        
-        <!-- LATEST POSTS -->
-        <div class="col-lg-3">
-          <h4>facebook ページ</h4>
-          <a href="https://www.facebook.com/"><p>
-            なんたらプロジェクト<br/>
-          </p></a>
-        </div><!-- /col-lg-3 -->
-        
-        <!-- NEW PROJECT -->
-        <div class="col-lg-3">
-          <h4>プロジェクト運営事務局</h4>
-        </div><!-- /col-lg-3 -->
-        
+        </div>
         
       </div><! --/row -->
     </div><!-- /container -->

@@ -84,7 +84,6 @@ a:after {
 
 .navbar {
 	font-size: 14px;
-	background: #1b1b1b;
 }
 
 .navbar-fixed-top {
@@ -678,5 +677,3 @@ p.capitalize:first-letter {
 	background: #2d2d2d;
 	}	
 }
-
-
