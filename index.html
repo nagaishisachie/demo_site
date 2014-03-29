@@ -16,52 +16,20 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">    
+    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">
     <link href="assets/css/animations.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- JavaScripts needed at the beginning
     ================================================== -->
-    <script type="text/javascript" src="http://alvarez.is/demo/marco/assets/js/twitterFetcher_v10_min.js"></script>
-
-    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-    <script type="text/javascript">
-        // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-    
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 11,
-                
-                scrollwheel: false,
-
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                // How you would like to style the map. 
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [ {   featureType:'water',    stylers:[{color:'#74c9be'},{visibility:'on'}] },{   featureType:'landscape',    stylers:[{color:'#f2f2f2'}] },{   featureType:'road',   stylers:[{saturation:-100},{lightness:45}]  },{   featureType:'road.highway',   stylers:[{visibility:'simplified'}] },{   featureType:'road.arterial',    elementType:'labels.icon',    stylers:[{visibility:'off'}]  },{   featureType:'administrative',   elementType:'labels.text.fill',   stylers:[{color:'#444444'}] },{   featureType:'transit',    stylers:[{visibility:'off'}]  },{   featureType:'poi',    stylers:[{visibility:'off'}]  }]
-            };
-
-            // Get the HTML DOM element that will contain your map 
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('map');
-
-            // Create the Google Map using out element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-    </script>
-    
-    
-    <!-- Main Jquery & Hover Effects. Should load first -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/hover_pack.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
+ 
+    
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover_pack.js"></script>
     
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,24 +43,28 @@
 
     <! ========== ナビバー ==================================================================================================== 
   =============================================================================================================================>
+
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1 .nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <strong><a class="navbar-brand" href="#">デモサイト</a></strong>
-        </div>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>デモサイト</strong></a>
+    </div>
 
-        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" >
-          <ul class="nav navbar-nav">
-            <li><a href="#action"><strong>活動について</strong></a></li>
-            <li><a href="#entry"><strong>入部登録</strong></a></li>
-          </ul>
-
-          <form class="form-inline navbar-right" action="http://sae.xpne.info/member/login/authMode/MailAddress" method="post" style="padding-top:7px;">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#action"><strong>活動について</strong></a></li>
+        <li><a href="#entry"><strong>入部登録</strong></a></li>
+      </ul>
+    
+                <form class="form-inline navbar-form navbar-right" action="http://sae.xpne.info/member/login/authMode/MailAddress" method="post" style="padding-top:7px;">
             <div class="form-group">
               <label for="authMailAddress_mail_address" class="sr-only">Eメールアドレス</label>
               <input type="email" class="form-control" placeholder="Eメール" id="authMailAddress_mail_address" type="text" name="authMailAddress[mail_address]">
@@ -107,10 +79,10 @@
               </label>
             </div>
             <button type="submit" class="btn btn-primary" type="button">サインイン</button>
-          </form>
-        
-      </div>
-    </nav>
+          </form> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
   <! ========== トップ ==================================================================================================== 
@@ -344,7 +316,7 @@
         <div class="col-lg-3">
           <h4>コンタクト</h4>
           <p>
-            <i class="fa fa-envelope-o"></i> support@pne.jp
+            <i class="glyphicon glyphicon-envelope"></i> support@pne.jp
           </p>
         </div>
         
@@ -354,25 +326,10 @@
   
 
 
-    <!-- Bootstrap core JavaScript
+    <!--<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/retina.js"></script>
 
-
-    <script>
-    $(window).scroll(function() {
-      $('.si').each(function(){
-      var imagePos = $(this).offset().top;
-  
-      var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-          $(this).addClass("slideUp");
-        }
-      });
-    });
-  </script>    
 
 
 
